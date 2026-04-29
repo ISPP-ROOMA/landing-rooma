@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title} | Encuentra tu Roomie ideal</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-[#F5F1E3] text-[#050505] font-sans antialiased selection:bg-[#008080] selection:text-[#FFFFFF] flex flex-col min-h-screen">
+        
+        <nav class="w-full bg-[#FFFFFF]/80 backdrop-blur-md fixed top-0 z-50 border-b border-[#DDDBCB] transition-all">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                        <img src="/logo.jpeg" alt="Logo de ROOMA" class="h-10 w-auto object-contain rounded-md" />
+                        <span class="font-bold text-2xl tracking-tight text-[#050505]">ROOMA</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#funcionalidades" class="text-[#050505]/70 hover:text-[#008080] font-medium transition-colors">Funcionalidades</a>
+                        <a href="#como-funciona" class="text-[#050505]/70 hover:text-[#008080] font-medium transition-colors">Cómo funciona</a>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="https://rooma-pre.vercel.app" target="_blank" class="px-6 py-2.5 rounded-full border-2 border-[#008080] text-[#008080] font-semibold hover:bg-[#008080] hover:text-[#FFFFFF] transition-all duration-300">
+                            Ir a la App
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-grow pt-20">
+            <slot />
+        </main>
+
+        <footer class="bg-[#FFFFFF] border-t border-[#DDDBCB] py-12 mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="/logo.jpeg" alt="Logo mini" class="h-6 w-auto object-contain rounded-sm grayscale opacity-70" />
+                    <span class="font-bold text-xl text-[#050505]">ROOMA</span>
+                </div>
+                <div class="flex gap-6 text-[#050505]/60 font-medium text-sm">
+                    <a href="#" class="hover:text-[#008080] transition-colors">Privacidad</a>
+                    <a href="#" class="hover:text-[#008080] transition-colors">Términos</a>
+                    <a href="#" class="hover:text-[#008080] transition-colors">Contacto</a>
+                </div>
+                <p class="text-sm text-[#050505]/40">© {new Date().getFullYear()} Rooma. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<style is:global>
+    :root { font-family: 'Inter', sans-serif; }
+</style>

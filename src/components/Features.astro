@@ -1,0 +1,124 @@
+---
+// src/components/Features.astro
+---
+<section id="funcionalidades" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#050505] tracking-tight mb-6">
+            Todo lo que necesitas, <span class="text-[#008080]">en una sola app</span>
+        </h2>
+        <p class="text-xl text-[#050505]/70 max-w-2xl mx-auto leading-relaxed">
+            Desde encontrar al compañero de piso perfecto hasta gestionar los gastos mensuales sin fricciones.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-[minmax(320px,auto)]">
+        
+        <div class="lg:col-span-2 bg-[#FFFFFF] rounded-[2.5rem] p-8 md:p-12 border border-[#DDDBCB] shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden flex flex-col justify-between">
+            <div class="relative z-10">
+                <div class="w-14 h-14 bg-[#F5F1E3] text-[#008080] rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                
+                <h3 class="text-3xl font-bold text-[#050505] mb-4">Descubrimiento Inteligente</h3>
+                <p class="text-[#050505]/70 text-lg leading-relaxed mb-8 max-w-xl">
+                    Explora viviendas y perfiles con filtros avanzados. Desliza para dar "Like", guarda tus favoritos y deja que nuestro algoritmo te sugiera compañeros con un alto grado de afinidad en gustos y estilo de vida.
+                </p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-[#F5F1E3] text-[#008080] rounded-full text-sm font-semibold tracking-wide">Filtros Avanzados</span>
+                    <span class="px-4 py-2 bg-[#F5F1E3] text-[#008080] rounded-full text-sm font-semibold tracking-wide">Sistema Swipe</span>
+                    <span class="px-4 py-2 bg-[#F5F1E3] text-[#008080] rounded-full text-sm font-semibold tracking-wide">Favoritos</span>
+                </div>
+            </div>
+            <div class="absolute -top-32 -right-32 w-80 h-80 bg-[#F5F1E3] rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+        </div>
+
+        <div class="lg:col-span-1 bg-[#008080] rounded-[2.5rem] p-8 md:p-12 shadow-xl group relative overflow-hidden flex flex-col justify-between text-[#FFFFFF]">
+            <div class="relative z-10">
+                <div class="w-14 h-14 bg-[#FFFFFF]/20 backdrop-blur-md text-[#FFFFFF] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                </div>
+                
+                <h3 class="text-3xl font-bold mb-4">Comunidad Segura</h3>
+                <p class="text-[#FFFFFF]/80 text-lg leading-relaxed mb-8">
+                    Chatea en tiempo real solo con tus matches. Recibe alertas al instante y construye confianza gracias a un sistema de reseñas verificadas.
+                </p>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-[#FFFFFF]/20 backdrop-blur-sm rounded-full text-sm font-semibold tracking-wide border border-[#FFFFFF]/10">Chat Privado</span>
+                    <span class="px-4 py-2 bg-[#FFFFFF]/20 backdrop-blur-sm rounded-full text-sm font-semibold tracking-wide border border-[#FFFFFF]/10">Reseñas</span>
+                </div>
+            </div>
+            <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-[#FFFFFF]/10 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
+        <div class="lg:col-span-3 bg-[#F5F1E3] rounded-[2.5rem] p-8 md:p-12 border border-[#DDDBCB] shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row gap-12 items-center">
+            
+            <div class="md:w-1/3">
+                <div class="w-14 h-14 bg-[#FFFFFF] text-[#008080] rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <h3 class="text-3xl font-bold text-[#050505] mb-4">Gestión del Hogar</h3>
+                <p class="text-[#050505]/70 text-lg leading-relaxed">
+                    Mantén la paz en casa. Desde publicar la habitación hasta coordinar las responsabilidades diarias, todo centralizado.
+                </p>
+            </div>
+            
+            <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-[#FFFFFF] p-8 rounded-3xl shadow-sm border border-[#DDDBCB]/50 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-[#F5F1E3] rounded-lg text-[#008080]">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-[#050505]">Finanzas Claras</h4>
+                    </div>
+                    <p class="text-[#050505]/70 leading-relaxed">
+                        Sube facturas y deja que la app divida los gastos automáticamente. Recibe recordatorios de pago para evitar olvidos incómodos.
+                    </p>
+                </div>
+
+                <div class="bg-[#FFFFFF] p-8 rounded-3xl shadow-sm border border-[#DDDBCB]/50 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-[#F5F1E3] rounded-lg text-[#008080]">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-[#050505]">Mantenimiento</h4>
+                    </div>
+                    <p class="text-[#050505]/70 leading-relaxed">
+                        Reporta averías fácilmente adjuntando fotos. Haz seguimiento del estado hasta su resolución, sin perder información en el camino.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="como-funciona" class="mt-24 pt-16 border-t border-[#DDDBCB]">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-[#050505]">Tu nuevo hogar, en 3 pasos</h3>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-center items-start md:items-center gap-10 md:gap-4 max-w-4xl mx-auto relative">
+            
+            <div class="hidden md:block absolute top-10 left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-[#F5F1E3] via-[#008080]/30 to-[#F5F1E3] -z-10"></div>
+
+            <div class="flex flex-col items-center flex-1 w-full group">
+                <div class="w-20 h-20 bg-[#FFFFFF] rounded-full flex items-center justify-center border-4 border-[#F5F1E3] text-[#008080] font-bold text-2xl shadow-sm transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-[#008080]">1</div>
+                <h4 class="mt-6 text-xl font-bold text-[#050505]">Conecta</h4>
+                <p class="text-base text-[#050505]/70 mt-2 text-center max-w-[200px]">Encuentra perfiles afines y muestra tu interés.</p>
+            </div>
+            
+            <div class="flex flex-col items-center flex-1 w-full group">
+                <div class="w-20 h-20 bg-[#008080] rounded-full flex items-center justify-center text-[#FFFFFF] font-bold text-2xl shadow-lg shadow-[#008080]/30 transition-transform duration-300 group-hover:-translate-y-2 ring-4 ring-[#008080]/20">2</div>
+                <h4 class="mt-6 text-xl font-bold text-[#050505]">Haz Match</h4>
+                <p class="text-base text-[#050505]/70 mt-2 text-center max-w-[200px]">Ambas partes se evalúan y confirman compatibilidad.</p>
+            </div>
+
+            <div class="flex flex-col items-center flex-1 w-full group">
+                <div class="w-20 h-20 bg-[#FFFFFF] rounded-full flex items-center justify-center border-4 border-[#F5F1E3] text-[#008080] font-bold text-2xl shadow-sm transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-[#008080]">3</div>
+                <h4 class="mt-6 text-xl font-bold text-[#050505]">Habla y Múdate</h4>
+                <p class="text-base text-[#050505]/70 mt-2 text-center max-w-[200px]">Chatea, concreta detalles y prepárate para convivir.</p>
+            </div>
+        </div>
+    </div>
+</section>

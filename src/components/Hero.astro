@@ -1,0 +1,28 @@
+---
+// src/components/Hero.astro
+---
+<section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-32 text-center flex flex-col items-center">
+    
+    <div class="mb-10 animate-fade-in-up">
+        <img src="/logo.jpeg" alt="Logo principal de ROOMA" class="h-28 md:h-36 w-auto object-contain rounded-3xl shadow-xl border-2 border-[#DDDBCB]/30 hover:scale-105 transition-transform duration-500" />
+    </div>
+
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-[#050505] mb-6 leading-tight">
+        Encuentra tu hogar ideal y <br class="hidden md:block"/>
+        <span class="text-[#008080]">convive en armonía</span>
+    </h1>
+    
+    <p class="mt-4 max-w-2xl mx-auto text-xl text-[#050505]/70 mb-12">
+        ROOMA te conecta con los compañeros de piso perfectos. 
+        Simplifica tu búsqueda, mejora la comunicación y gestiona los pagos en un solo lugar.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="https://rooma-pre.vercel.app" target="_blank" class="px-8 py-4 bg-[#008080] text-[#FFFFFF] rounded-2xl font-semibold hover:bg-[#008080]/90 transition-all duration-300 shadow-lg shadow-[#008080]/20 hover:-translate-y-1 w-full sm:w-auto text-lg">
+            Comenzar mi búsqueda
+        </a>
+        <a href="#como-funciona" class="px-8 py-4 bg-transparent border-2 border-[#DDDBCB] text-[#050505] rounded-2xl font-semibold hover:border-[#008080] hover:text-[#008080] transition-all duration-300 w-full sm:w-auto text-lg bg-[#FFFFFF]/50 hover:bg-[#FFFFFF]">
+            Ver cómo funciona
+        </a>
+    </div>
+</section>
