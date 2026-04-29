@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ISPP-ROOMA.github.io',
+  site: 'https://ispp-rooma.github.io',
   base: '/landing-rooma', 
   output: 'static',
   integrations: [
